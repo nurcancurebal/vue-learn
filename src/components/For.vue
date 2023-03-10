@@ -14,10 +14,21 @@
       <label>
         <input v-model="message" placeholder="edit me" />
         <textarea v-model="area" />
+        <input type="checkbox" v-model="checked" />
+
+        <label>
+          <select>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+        </label>
       </label>
 
       <p>{{ message }}</p>
       <p>{{ area }}</p>
+      <p>{{ checked }}</p>
     </div>
   </div>
 </template>
@@ -33,7 +44,8 @@ export default {
         { name: "ersel", age: "35" },
       ],
       message: "",
-      area:""
+      area: "",
+      checked: "",
     };
   },
 
