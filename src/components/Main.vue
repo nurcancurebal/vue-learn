@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h3>for döngüsü</h3>
+      <h3>v-for</h3>
       <p v-for="i in 4" v v-bind:key="'for1' + i">{{ i }}</p>
       <p v-for="(item, index) in person" v-bind:key="'for2' + index">
         name: {{ item.name }} age: {{ item.age }}
@@ -61,6 +61,16 @@
       <h3>v-once</h3>
       <button v-once v-on:click="changevalue">{{ buttonvalue }}</button>
     </div>
+
+    <div>
+      <h3>v-html</h3>
+      <p v-html="vue"></p>
+    </div>
+
+    <div>
+      <h3>v-pre</h3>
+      <p>{{ prevalue }}</p>
+    </div>
   </div>
 </template>
 
@@ -86,6 +96,8 @@ export default {
       ],
       radio: null,
       buttonvalue: true,
+      vue: "<a href='https://vuejs.org/'>vue web</a>",
+      prevalue: "vue",
     };
   },
   methods: {
