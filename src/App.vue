@@ -48,16 +48,16 @@
       </div>
     </div>
 
-    <Footer />
-
     <For />
+
+    <Footer />
   </div>
 </template>
 
 <script>
 import Nav from "./components/Nav.vue";
-import Footer from "./components/Footer.vue";
 import For from "./components/For.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   data() {
@@ -69,8 +69,8 @@ export default {
   name: "App",
   components: {
     Nav,
-    Footer,
     For,
+    Footer,
   },
 
   methods: {

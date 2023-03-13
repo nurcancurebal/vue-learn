@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Footer</h3>
+    <h2>Footer</h2>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
       inventore harum cumque aperiam laudantium iste, labore id quod ullam
