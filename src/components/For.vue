@@ -12,23 +12,30 @@
       <h1>v-model</h1>
 
       <label>
-        <input v-model="message" placeholder="edit me" />
-        <textarea v-model="area" />
+        <input v-model.lazy="message" placeholder="edit me" />
+        <textarea v-model.number.trim="area" />
         <input type="checkbox" v-model="checked" />
 
         <label>
-          <select>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
+          <select v-model="selected">
+            <option disabled>select one</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
           </select>
         </label>
       </label>
 
+      <label>
+        <select></select>
+      </label>
+
       <p>{{ message }}</p>
       <p>{{ area }}</p>
+      <p>{{ typeof area }}</p>
       <p>{{ checked }}</p>
+      <p>{{ selected }}</p>
     </div>
   </div>
 </template>
@@ -46,6 +53,7 @@ export default {
       message: "",
       area: "",
       checked: "",
+      selected: null,
     };
   },
 
