@@ -1,6 +1,21 @@
 <template>
   <div>
     <div>
+      <h3>v-bind</h3>
+      <p>
+        v-bind yönergesi , bir veya daha fazla özniteliği veya bir bileşen
+        pervanesini bir öğeye bağlamak için kullanılan bir Vuejs yönergesidir.
+        Bu öznitelik, Vuejs örneğinde tanımlanan verilerimize bağlanırsa,
+        veriler değiştikçe dinamik olarak değişiklikler gözlemlenebilir.
+      </p>
+    </div>
+
+    <div>
+      <h3>v-on</h3>
+      <p>Event bağlamak için kullanırız.</p>
+    </div>
+
+    <div>
       <h3>v-for</h3>
       <p v-for="i in 4" v v-bind:key="'for1' + i">{{ i }}</p>
       <p v-for="(item, index) in person" v-bind:key="'for2' + index">
@@ -69,7 +84,17 @@
 
     <div>
       <h3>v-pre</h3>
-      <p>{{ prevalue }}</p>
+      <p v-pre>{{ prevalue }}</p>
+    </div>
+
+    <div>
+      <h3>v-cloak</h3>
+      <p>
+        v-cloak yönergesi , ilişkili Vue örneği derlemeyi bitirene kadar öğede
+        kalacak olan bir Vue.js yönergesidir. [v-cloak] { display: none } gibi
+        CSS kurallarıyla birlikte bu yönerge, Vue örneği hazır olana kadar
+        derlenmemiş bıyık bağlamalarını gizlemek için kullanılabilir.
+      </p>
     </div>
   </div>
 </template>
